@@ -8,6 +8,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
 
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -34,7 +35,8 @@ async def on_message(message):
         'Ty to byś tylko intepretowane by było',
         'Po chuj się na wakacje w gips ładujesz',
         'Daleko nie uciekniesz',
-        'Potrzymaj mi piwo'
+        'Potrzymaj mi piwo',
+        'Słuchaj no studenciku jebany\n Jeszcze jeden taki numer i widzimy się u dziekana'
     ]
 
     reply = random.choice(odp)
